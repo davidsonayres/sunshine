@@ -11,21 +11,122 @@ body {
   height: 100%;
 }
 
-@media (min-width: 1024px) {
+div.yellow {
+  position: fixed;
+  display: inline;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 1200px 1000px;
+  border-color: transparent transparent #FFF51B transparent;
+  bottom: 0px;
+}
+
+div.above_board {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  overflow: visible;
+}
+
+div.brand {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: visible;
+}
+
+div.brand img {
+  position: absolute;
+  height: 162%;
+  margin: -10% 17%;
+}
+
+div.menu {
+  float: right;
+  width: 100%;
+  margin-top: 25%;
+}
+
+div.menu h2 {
+  margin-left: 64%;
+  font-size: 2em;
+  font-family: Courier New;
+}
+
+div.divide {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+}
+
+div.divide img {
+  display: block;
+  position: relative;
+  width: 63%;
+  margin: 3% auto;
+}
+
+div.below_board {
+  width: 100%;
+  height: 50%;
+  bottom: 0px;
+  overflow: visible;
+}
+
+div.location {
+  margin-top: 35%;
+  font-family: Courier New;
+  font-size: 1.25em;
+  text-align: center;
+  line-height: 1.35;
+}
+
+p.call {
+  margin: 2em;
+}
+
+img.slogan {
+  width: 8em;
+  float: left;
+  margin-left: 20%;
+  margin-top: -3.5%;
+}
+
+img.logo {
+  width: 12%;
+  float: right;
+  margin-top: 9%;
+  margin-right: 1em;
+}
+
+div.line1,
+div.line2 {
+  background-color: black;
+  width: 95%;
+  bottom: 0px;
+}
+
+div.line1 {
+  height: 6px;
+  margin: auto;
+}
+
+div.line2 {
+  height: 2px;
+  margin: -14px auto;
+}
+
+@media (min-width: 1280px) {
 
   div.yellow {
-    position: fixed;
-    display: inline;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0px 1200px 1000px;
-    border-color: transparent transparent #FFF51B transparent;
-    bottom: 0px;
+    border-width: 0px 1400px 1000px;
   }
 
-  div.above_board {
+  /*div.above_board {
     position: absolute;
     width: 100%;
     height: 50%;
@@ -120,5 +221,5 @@ body {
   div.line2 {
     height: 2px;
     margin: -14px auto;
-  }
+  }*/
 }
