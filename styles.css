@@ -39,8 +39,8 @@ div.brand {
 
 div.brand img {
   position: absolute;
-  height: 90%;
-  margin: 2% 13%;
+  height: 107%;
+  margin: 0 14%;
 }
 
 div.menu {
@@ -50,7 +50,7 @@ div.menu {
 }
 
 div.menu h2 {
-  margin-left: 67%;
+  margin-left: 66%;
   font-size: 2em;
   font-family: Courier New;
 }
@@ -77,7 +77,7 @@ div.below_board {
 }
 
 div.location {
-  margin-top: 25%;
+  margin-top: 24%;
   font-family: Courier New;
   font-size: 1em;
   text-align: center;
@@ -92,12 +92,12 @@ img.slogan {
   width: 7em;
   float: left;
   margin-left: 20%;
-  margin-top: -2.5em;
+  margin-top: -3.3em;
 }
 
 img.logo {
   float: right;
-  margin-top: 3%;
+  margin-top: 2.5%;
   margin-right: 1em;
 }
 
