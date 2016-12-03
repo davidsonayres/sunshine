@@ -4,17 +4,29 @@
   overflow: hidden;
 }
 
-html {
+body {
   box-sizing: border-box;
   position: fixed;
   width: 1280px;
   height: 612px;
 }
 
+div.yellow {
+  position: fixed;
+  display: inline;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 1400px 800px;
+  border-color: transparent transparent #FFF51B transparent;
+  bottom: 0px;
+}
+
 div.above_board {
   position: absolute;
   width: 100%;
-  height: 55%;
+  height: 50%;
 }
 
 div.brand {
@@ -28,12 +40,19 @@ div.brand {
 div.brand img {
   position: absolute;
   height: 90%;
-  margin: 3% 13%;
+  margin: 2% 13%;
 }
 
 div.menu {
-  position: relative;
   float: right;
+  width: 100%;
+  margin-top: 12.2em;
+}
+
+div.menu h2 {
+  margin-left: 67%;
+  font-size: 2em;
+  font-family: Courier New;
 }
 
 div.divide {
@@ -50,13 +69,50 @@ div.divide img {
   margin: auto;
 }
 
-div.menu {
+div.below_board {
   width: 100%;
-  margin-top: 14em;
+  height: 50%;
+  bottom: 0px;
+  overflow: visible;
 }
 
-div.menu h2 {
-  margin-left: 67%;
-  font-size: 2em;
+div.location {
+  margin-top: 25%;
   font-family: Courier New;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.35;
+}
+
+p.call {
+  margin: 2em;
+}
+
+img.slogan {
+  width: 7em;
+  float: left;
+  margin-left: 20%;
+  margin-top: -2.5em;
+}
+
+img.logo {
+  float: right;
+  margin-top: 3%;
+  margin-right: 1em;
+}
+
+div.line1,
+div.line2 {
+  background-color: black;
+  width: 95%;
+}
+
+div.line1 {
+  height: 6px;
+  margin: -2.5em auto;
+}
+
+div.line2 {
+  height: 2px;
+  margin: 1.8em auto;
 }
