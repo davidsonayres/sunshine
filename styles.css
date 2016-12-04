@@ -175,3 +175,58 @@ div.line2 {
     margin: 45px auto;
   }
 }
+
+@media (max-width: 425px){
+  /*div.yellow {
+    border-width: 0px 1400px 1000px;
+  }
+
+  div.brand img {
+    position: absolute;
+    height: 165%;
+    margin: -9% 15%;
+  }
+
+  div.menu {
+    margin-top: 21.5%;
+  }
+
+  div.menu h2 {
+    margin-left: 67%;
+    font-size: 2.25em;
+  }
+
+  div.divide img {
+    display: block;
+    position: relative;
+    width: 66%;
+    margin: 0.5% auto;
+  }
+
+  div.location {
+    margin-top: 33%;
+    font-size: 1.35em;
+  }
+
+  img.slogan {
+    width: 9em;
+    margin-left: 16.5%;
+    margin-top: -5%;
+  }
+
+  img.logo {
+    width: 12%;
+    margin-top: 0.5%;
+    margin-right: 1em;
+  }
+
+  div.line1 {
+    height: 6px;
+    margin: -60px auto;
+  }
+
+  div.line2 {
+    height: 2px;
+    margin: 45px auto;*/
+  }
+}
