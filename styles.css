@@ -8,122 +8,184 @@ body {
   box-sizing: border-box;
   position: fixed;
   width: 100%;
-  height: 100%;
 }
 
-div.yellow {
-  position: fixed;
-  display: inline;
-  z-index: -1;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0px 1200px 1000px;
-  border-color: transparent transparent #FFF51B transparent;
-  bottom: 0px;
+div#browser_view {
+  visibility: hidden;
 }
 
-div.above_board {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  overflow: visible;
+div#mobile_view {
+  display: fixed;
+  height: 80%;
 }
 
-div.brand {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  overflow: visible;
-}
-
-div.brand img {
-  position: absolute;
-  height: 162%;
-  margin: -10% 17%;
-}
-
-div.menu {
-  float: right;
-  width: 100%;
-  margin-top: 25%;
-}
-
-div.menu h2 {
-  margin-left: 64%;
-  font-size: 2em;
-  font-family: Courier New;
-}
-
-div.divide {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  overflow: hidden;
-}
-
-div.divide img {
+div.top {
+  height: 10%;
   display: block;
-  position: relative;
-  width: 63%;
-  margin: 3% auto;
-}
-
-div.below_board {
-  width: 100%;
-  height: 50%;
-  bottom: 0px;
-  overflow: visible;
-}
-
-div.location {
-  margin-top: 35%;
-  font-family: Courier New;
-  font-size: 1.25em;
-  text-align: center;
-  line-height: 1.35;
-}
-
-p.call {
-  margin: 2em;
-}
-
-img.slogan {
-  width: 8em;
-  float: left;
-  margin-left: 20%;
-  margin-top: -3.5%;
-}
-
-img.logo {
-  width: 12%;
-  float: right;
-  margin-top: 9%;
-  margin-right: 1em;
+  top: 0px;
 }
 
 div.line1,
-div.line2 {
+div.line2,
+div.line3,
+div.line4 {
   background-color: black;
-  width: 95%;
+  width: 75%;
   bottom: 0px;
 }
 
 div.line1 {
+  height: 2px;
+  margin: 100px auto 3px;
+}
+
+div.line2 {
   height: 6px;
   margin: auto;
 }
 
-div.line2 {
-  height: 2px;
-  margin: -14px auto;
+img.logo {
+  display: block;
+  margin: 2% auto 0;
+}
+
+img.brand {
+  display: block;
+  margin: -6% auto;
+}
+
+
+/*@media (min-width: 1024px) and (max-width: 1279px) {
+
+  * {
+    border: 1px solid grey;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  div.yellow {
+    position: fixed;
+    display: inline;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 1200px 1000px;
+    border-color: transparent transparent #FFF51B transparent;
+    bottom: 0px;
+    visibility: visible;
+  }
+
+  div.above_board {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    overflow: visible;
+  }
+
+  div.brand {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: visible;
+  }
+
+  div.brand img {
+    position: absolute;
+    height: 162%;
+    margin: -10% 17%;
+  }
+
+  div.menu {
+    float: right;
+    width: 100%;
+    margin-top: 25%;
+  }
+
+  div.menu h2 {
+    margin-left: 64%;
+    font-size: 2em;
+    font-family: Courier New;
+  }
+
+  div.divide {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  div.divide img {
+    display: block;
+    position: relative;
+    width: 63%;
+    margin: 3% auto;
+  }
+
+  div.below_board {
+    width: 100%;
+    height: 50%;
+    bottom: 0px;
+    overflow: visible;
+  }
+
+  div.location {
+    margin-top: 35%;
+    font-family: Courier New;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  p.call {
+    margin: 2em;
+  }
+
+  img.slogan {
+    width: 8em;
+    float: left;
+    margin-left: 20%;
+    margin-top: -3.5%;
+  }
+
+  img.logo {
+    width: 12%;
+    float: right;
+    margin-top: 9%;
+    margin-right: 1em;
+  }
+
+  div.line5,
+  div.line6 {
+    background-color: black;
+    width: 95%;
+    bottom: 0px;
+  }
+
+  div.line5 {
+    height: 6px;
+    margin: auto;
+  }
+
+  div.line6 {
+    height: 2px;
+    margin: -14px auto;
+  }
 }
 
 @media (min-width: 1280px) {
 
   div.yellow {
     border-width: 0px 1400px 1000px;
+    visibility: visible;
   }
 
   div.brand img {
@@ -174,59 +236,4 @@ div.line2 {
     height: 2px;
     margin: 45px auto;
   }
-}
-
-@media (max-width: 425px){
-  /*div.yellow {
-    border-width: 0px 1400px 1000px;
-  }
-
-  div.brand img {
-    position: absolute;
-    height: 165%;
-    margin: -9% 15%;
-  }
-
-  div.menu {
-    margin-top: 21.5%;
-  }
-
-  div.menu h2 {
-    margin-left: 67%;
-    font-size: 2.25em;
-  }
-
-  div.divide img {
-    display: block;
-    position: relative;
-    width: 66%;
-    margin: 0.5% auto;
-  }
-
-  div.location {
-    margin-top: 33%;
-    font-size: 1.35em;
-  }
-
-  img.slogan {
-    width: 9em;
-    margin-left: 16.5%;
-    margin-top: -5%;
-  }
-
-  img.logo {
-    width: 12%;
-    margin-top: 0.5%;
-    margin-right: 1em;
-  }
-
-  div.line1 {
-    height: 6px;
-    margin: -60px auto;
-  }
-
-  div.line2 {
-    height: 2px;
-    margin: 45px auto;*/
-  }
-}
+}*/
