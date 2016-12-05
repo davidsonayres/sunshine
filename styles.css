@@ -98,6 +98,19 @@ div.line4 {
   margin: auto;
 }
 
+div.yellowsquare {
+  position: fixed;
+  z-index: -2;
+  float: left;
+  margin-top: -94%;
+  border-top: 50px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-left: 850px solid #FFF51B;
+  border-right: 500px solid transparent;
+  height: 830px;
+  width: 0;
+}
+
 /*@media (min-width: 1024px) and (max-width: 1279px) {
 
   * {
