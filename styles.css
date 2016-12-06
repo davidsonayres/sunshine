@@ -1,7 +1,6 @@
 * {
   /*border: 1px solid grey;*/
   margin: 0;
-  overflow: hidden;
 }
 
 body {
@@ -37,12 +36,12 @@ div.line4 {
 }
 
 div.line1 {
-  height: 2px;
+  height: 1.25px;
   margin: 100px auto 3px;
 }
 
 div.line2 {
-  height: 6px;
+  height: 4px;
   margin: auto;
 }
 
@@ -89,12 +88,12 @@ img.squiggle {
 }
 
 div.line3 {
-  height: 2px;
+  height: 1.25px;
   margin: 100px auto 3px;
 }
 
 div.line4 {
-  height: 6px;
+  height: 4px;
   margin: auto;
 }
 
@@ -110,6 +109,62 @@ div.yellowsquare {
   height: 830px;
   width: 0;
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+div#browser_view {
+  visibility: hidden;
+}
+
+div#mobile_view {
+  overflow: visible;
+}
+
+div.line1 {
+  margin: 40px auto 3px;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+p.star {
+  font-size: 1.25em;
+}
+
+h3,
+p.day,
+p.hours {
+  font-family: Courier New;
+  font-size: 1.4em;
+}
+
+p.day {
+  margin-top: 7%;
+}
+
+p.hours {
+  font-size: 1.2em;
+}
+
+div.line3 {
+  margin: 40px auto 3px;
+}
+
+div.yellowsquare {
+  position: fixed;
+  z-index: -2;
+  float: left;
+  margin-left: 5%;
+  margin-top: -93%;
+  border-top: 30px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-left: 395px solid #FFF51B;
+  border-right: 500px solid transparent;
+  height: 395px;
+  width: 0;
+}
+
 
 /*@media (min-width: 1024px) and (max-width: 1279px) {
 
