@@ -37,7 +37,7 @@ div.line4 {
 
 div.line1 {
   height: 1.25px;
-  margin: 100px auto 3px;
+  margin: 40px auto 3px;
 }
 
 div.line2 {
@@ -56,13 +56,13 @@ img.brand {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 1.15em;
   margin-top: -7.3%;
 }
 
 p.star {
   font-family: Courier New;
-  font-size: 2.5em;
+  font-size: 1.15em;
   margin-top: 8%;
 }
 
@@ -70,7 +70,7 @@ h3,
 p.day,
 p.hours {
   font-family: Courier New;
-  font-size: 2.9em;
+  font-size: 1.4em;
 }
 
 p.day {
@@ -78,7 +78,7 @@ p.day {
 }
 
 p.hours {
-  font-size: 2.6em;
+  font-size: 1.25em;
 }
 
 img.squiggle {
@@ -101,12 +101,13 @@ div.yellowsquare {
   position: fixed;
   z-index: -2;
   float: left;
-  margin-top: -94%;
-  border-top: 50px solid transparent;
-  border-bottom: 80px solid transparent;
-  border-left: 850px solid #FFF51B;
+  margin-left: 5%;
+  margin-top: -118%;
+  border-top: 25px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 330px solid #FFF51B;
   border-right: 500px solid transparent;
-  height: 830px;
+  height: 425px;
   width: 0;
 }
 
