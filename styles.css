@@ -1,5 +1,4 @@
 * {
-  /*border: 1px solid grey;*/
   margin: 0;
 }
 
@@ -17,14 +16,9 @@ div#browser_view {
 
 div#mobile_view {
   display: fixed;
-  height: 80%;
-  overflow: visible;
-}
-
-div.top {
-  height: 10%;
-  display: block;
-  top: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 
 div.line1,
@@ -95,15 +89,14 @@ div.line3 {
 
 div.line4 {
   height: 4px;
-  margin: auto;
+  margin: 0 auto 40px;
 }
 
 div.yellowsquare {
-  position: fixed;
+  position: relative;
   z-index: -2;
   float: left;
-  margin-left: 5%;
-  margin-top: -118%;
+  margin: -128% 0 0 5%;
   border-top: 25px solid transparent;
   border-bottom: 30px solid transparent;
   border-left: 330px solid #FFF51B;
@@ -112,19 +105,37 @@ div.yellowsquare {
   width: 0;
 }
 
+@media (min-width: 420px) and (max-width: 439px) {
+  div.yellowsquare {
+    margin-top: -124%;
+    border-top: 30px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 346px solid #FFF51B;
+    height: 425px;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 459px) {
+  div.yellowsquare {
+    margin-top: -120%;
+    border-top: 30px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 365px solid #FFF51B;
+    height: 435px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 479px) {
+  div.yellowsquare {
+    margin-top: -117%;
+    border-top: 30px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 380px solid #FFF51B;
+    height: 450px;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 767px) {
-
-  div#browser_view {
-    visibility: hidden;
-  }
-
-  div#mobile_view {
-    overflow: visible;
-  }
-
-  div.line1 {
-    margin: 40px auto 3px;
-  }
 
   h2 {
     font-size: 1.25em;
@@ -132,17 +143,6 @@ div.yellowsquare {
 
   p.star {
     font-size: 1.25em;
-  }
-
-  h3,
-  p.day,
-  p.hours {
-    font-family: Courier New;
-    font-size: 1.4em;
-  }
-
-  p.day {
-    margin-top: 7%;
   }
 
   p.hours {
@@ -154,24 +154,51 @@ div.yellowsquare {
   }
 
   div.yellowsquare {
-    position: fixed;
-    z-index: -2;
-    float: left;
-    margin-left: 5%;
-    margin-top: -93%;
+    margin-top: -100%;
     border-top: 30px solid transparent;
     border-bottom: 35px solid transparent;
     border-left: 395px solid #FFF51B;
     border-right: 500px solid transparent;
     height: 395px;
-    width: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 519px) {
+  div.yellowsquare {
+    margin-top: -98%;
+    border-left: 415px solid #FFF51B;
+    height: 400px;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 539px){
+  div.yellowsquare {
+    margin-top: -95%;
+    border-left: 430px solid #FFF51B;
+    height: 405px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 559px){
+  div.yellowsquare {
+    margin-top: -93%;
+    border-left: 440px solid #FFF51B;
+    height: 410px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 559px){
+  div.yellowsquare {
+    margin-top: -93%;
+    border-left: 440px solid #FFF51B;
+    height: 410px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
   div#browser_view {
-    visibility: visible;
+    display: block;
     position: relative;
     height: 100%;
   }
@@ -180,10 +207,6 @@ div.yellowsquare {
     display: none;
   }
 
-  div.triangle-holder {
-    width: 100%;
-    height: 100%;
-  }
   div.yellowtriangle {
     position: absolute;
     display: inline;
@@ -191,7 +214,7 @@ div.yellowsquare {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 100%;
+    border-width: 800px;
     border-color: transparent transparent #FFF51B transparent;
     bottom: 0px;
   }
@@ -234,7 +257,7 @@ div.yellowsquare {
     position: relative;
     width: 100%;
     bottom: 0;
-    overflow: hidden;
+    overflow: visible;
   }
 
   div.divide img {
@@ -297,10 +320,19 @@ div.yellowsquare {
 }
 
 
-/*@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  div#mobile_view {
+    display: none;
+  }
+
+  div#browser_view {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
 
   * {
-    border: 1px solid grey;
     margin: 0;
     overflow: hidden;
   }
@@ -329,7 +361,7 @@ div.yellowsquare {
     position: absolute;
     width: 100%;
     height: 50%;
-    overflow: visible;
+    overflow: hidden;
   }
 
   div.brand {
@@ -343,7 +375,8 @@ div.yellowsquare {
   div.brand img {
     position: absolute;
     height: 162%;
-    margin: -10% 17%;
+    top: -25%;
+    left: 15%;
   }
 
   div.menu {
@@ -359,17 +392,17 @@ div.yellowsquare {
   }
 
   div.divide {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
-    overflow: hidden;
+    overflow: visible;
   }
 
   div.divide img {
     display: block;
-    position: relative;
+    position: absolute;
     width: 63%;
-    margin: 3% auto;
+    margin: 5% auto;
   }
 
   div.below_board {
@@ -425,6 +458,14 @@ div.yellowsquare {
 
 @media (min-width: 1280px) {
 
+  div#mobile_view {
+    display: none;
+  }
+
+  div#browser_view {
+    display: block;
+  }
+
   div.yellow {
     border-width: 0px 1400px 1000px;
     visibility: visible;
@@ -478,4 +519,4 @@ div.yellowsquare {
     height: 2px;
     margin: 45px auto;
   }
-}*/
+}
