@@ -139,10 +139,120 @@ a:active h2 {
   div.location_line a {
     margin-bottom: 2%;
   }
-
 }
 
-@media (min-width: 416px) and (max-width: 689px) {}
+@media (min-width: 416px) and (max-width: 689px) {
+  img.brand2,
+  img.slogan,
+  div.location_block,
+  img.browser_background,
+  div.line1,
+  div.line2,
+  img.yellow_logo {
+    display: none;
+  }
+
+  img.mobile_background {
+    z-index: -1;
+    position: fixed;
+    bottom: 9.5%;
+    margin-left: -45%;
+    width: 90%;
+  }
+
+  div.line3,
+  div.line4 {
+    background-color: black;
+    width: 80%;
+    margin: auto;
+  }
+
+  div.line3 {
+    height: 2px;
+    margin-top: 7%;
+  }
+
+  div.line3 {
+    margin-top: 1%;
+  }
+
+  div.line4 {
+    height: 4px;
+    margin-top: 3px;
+  }
+
+  div.logo {
+    display: block;
+    margin: -105% 35% 0;
+    width: 30%;
+    height: 20%;
+    float: left;
+  }
+
+  img.brand1 {
+    margin-top: 16%;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-top: -9%;
+  }
+
+  div.divide {
+    margin-top: -2%;
+    width: 100%;
+  }
+
+  div.divide img {
+    width: 70%;
+    margin: auto;
+  }
+
+  div.menu h2 {
+    font-size: 1.25em;
+    margin-top: -1.5%;
+  }
+
+  div.operation {
+    margin-top: 1.5%;
+  }
+
+  p.star {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    margin: 0 auto -3%;
+  }
+
+  p.day {
+    font-size: 1.22em;
+    margin-top: 4%;
+  }
+
+  p.hours {
+    font-size: 1.10em;
+  }
+
+  img.squiggle {
+    display: relative;
+    z-index: -1;
+    margin-top: -70%;
+    margin-left: 75%;
+    margin-bottom: 5%;
+  }
+
+  p.call {
+    margin-top: 4%;
+    margin-bottom: 1%;
+  }
+
+  div.location_line a {
+    margin-bottom: 2%;
+  }
+}
 
 @media (min-width: 690px) and (max-width: 768px) {
 
