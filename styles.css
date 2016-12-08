@@ -24,6 +24,12 @@ a:active {
   color: black;
 }
 
+a:hover h2,
+a:active h2 {
+  font-weight: lighter;
+  color: black;
+}
+
 @media (min-width: 320px) and (max-width: 415px) {
 
   img.brand2,
@@ -136,44 +142,44 @@ a:active {
 
 }
 
-@media (min-width: 416px) and (max-width: 768px) {
+@media (min-width: 416px) and (max-width: 689px) {}
+
+@media (min-width: 690px) and (max-width: 768px) {
 
   img.mobile_background,
   img.yellow_logo,
   img.brand1,
   h2.slogan,
   img.squiggle,
-  div.location_line a {
+  div.location_block a,
+  div.line1,
+  div.line2 {
     display: none;
   }
 
   img.browser_background {
     z-index: -1;
-    position: fixed;
+    position: absolute;
     margin: 0px;
-    bottom: 0;
+    bottom: -248%;
+    left: -250%;
+    width: 1000%;
+    height: 1000%;
+    transform: rotate(-6.2deg);
   }
 
-  div.line1,
-  div.line2,
   div.line3,
   div.line4 {
     background-color: black;
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 
-  div.line1,
   div.line3 {
     height: 2px;
-    margin-top: 7%;
-  }
-
-  div.line3 {
     margin-top: 1%;
   }
 
-  div.line2,
   div.line4 {
     height: 4px;
     margin-top: 3px;
@@ -181,6 +187,7 @@ a:active {
 
   div.divide {
     width: 100%;
+    margin-top: -12%;
   }
 
   div.divide img {
@@ -193,31 +200,53 @@ a:active {
     margin-top: -1.5%;
   }
 
+  img.slogan {
+    float: left;
+    position: fixed;
+    margin-top: 37%;
+    margin-left: -42%;
+    width: 13.5%;
+  }
+
   div.operation {
     margin-top: 3.5%;
   }
 
   p.star {
     font-size: 1.5em;
+    margin-top: -2%;
   }
 
   h3 {
-    font-size: 1.25em;
-    margin: 1% auto 4%;
+    font-size: 1.15em;
+    margin: 1% auto 2%;
   }
 
   p.day {
-    font-size: 1.5em;
-    margin-top: 4%;
+    font-size: 1.4em;
+    margin-top: 2%;
   }
 
   p.hours {
-    font-size: 1.25em;
+    font-size: 1.15em;
   }
 
   p.call {
-    margin-top: 4%;
-    margin-bottom: 1%;
+    margin: 10% 14% 0.5%;
+    text-align: right;
+  }
+
+  div.location_line a {
+    display: block;
+    margin: 0 14% 1.5%;
+    text-align: right;
+  }
+
+  div.logo {
+    float: right;
+    display: inline;
+    width: 10%;
+    margin: -8% 3% 0 0;
   }
 }
 
