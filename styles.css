@@ -69,20 +69,20 @@ a:visited {
 
   .brand_mobile img.brand_name {
     position: relative;
-    width: 70%;
+    width: 80%;
     margin-top: -9%;
   }
 
   .brand_mobile h2 {
-    font-size: 0.5em;
+    font-size: 1vw;
     font-family: Times New Roman;
     font-weight: normal;
   }
 
   img.slashes {
     position: relative;
-    height: 400%;
-    margin-top: -65%;
+    width: 400%;
+    margin-top: -70%;
     z-index: -1;
   }
 
