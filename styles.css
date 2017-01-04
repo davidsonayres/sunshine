@@ -10,6 +10,14 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
 @media (min-width: 300px) and (max-width: 767px){
 
   div#browser {
@@ -180,20 +188,21 @@ body {
   div.brand_browser h2 {
     font-family: Times New Roman;
     font-weight: normal;
-    font-size: 280%;
+    font-size: 5vw;
     margin-top: -13%;
   }
 
   img.slashes2 {
     width: 140%;
-    margin-top: -50%;
+    margin-top: -55%;
     z-index: -1;
   }
 
   div.manifest {
     position: relative;
-    margin-top: -140%;
+    margin-top: -145%;
     padding: 10%;
+    z-index: 1;
   }
 
   div.manifest p {
@@ -203,13 +212,20 @@ body {
 
   img.menu2 {
     width: 40%;
-    margin-top: -20%;
+    margin-top: -22%;
+    z-index: 10;
+    position: relative;
+  }
+
+  img.menu2:hover {
+    transform: scale(1.2);
   }
 
   div.schedule_browser {
     width: 100%;
     line-height: 1.5;
     position: relative;
+    margin-top: -10%;
   }
 
   div.schedule_browser h2 {
@@ -232,6 +248,15 @@ body {
     margin-bottom: 4%;
   }
 
+  span.capital {
+    font-size: 1.25em;
+    line-height: 0.8;
+  }
+
+  span.small_cap {
+    font-size: 0.9em;
+  }
+
   div.contact {
     width: 100%;
     position: relative;
@@ -247,11 +272,14 @@ body {
     margin-bottom: 3%;
   }
 
+  div.contact a:hover {
+    font-size: 1.21em;
+  }
+
   div.logo {
     width: 100%;
     height: 20%;
     position: relative;
-    margin-top: 15%;
   }
 
   div.logo img {
@@ -264,7 +292,7 @@ body {
     width: 100%;
     height: 4px;
     background-color: black;
-    margin-top: 24%;
+    margin-top: 12%;
   }
 
   div.bottom_line_4 {
@@ -276,7 +304,7 @@ body {
 
   div.yellow {
     background-color: #FFF112;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   }
 
   img.triangle {
