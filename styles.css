@@ -36,10 +36,9 @@ a:visited {
   img.trapezoid {
     z-index: -2;
     height: 105%;
-    /*width: 95%;*/
     position: absolute;
     margin-top: -8%;
-    margin-left: -75%;
+    margin-left: -72%;
   }
 
   div.top_line_1 {
@@ -133,16 +132,14 @@ a:visited {
     margin-bottom: -20%;
   }
 
-  img.menu2:hover {
-    transform: scale(1.2);
-  }
-
-  p.phone {
+  p.phone a {
     font-size: 1.5em;
     margin-bottom: 5%;
+    color: black;
   }
 
   div.bottom_line_1 {
+    margin-top: 3%;
     width: 100%;
     height: 4px;
     background-color: black;
