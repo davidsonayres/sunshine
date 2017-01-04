@@ -243,6 +243,8 @@ a:visited {
   div.manifest p {
     line-height: 1.25;
     margin-bottom: 3%;
+    text-align: justify;
+    text-align-last: center;
   }
 
   img.menu2 {
