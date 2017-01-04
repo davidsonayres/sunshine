@@ -42,16 +42,16 @@ a:visited {
 
   div.top_line_1 {
     width: 100%;
-    height: 5px;
+    height: 4px;
     background-color: black;
-    margin-top: 6%;
+    margin-top: 4%;
   }
 
   div.top_line_2 {
     width: 100%;
-    height: 8px;
+    height: 7px;
     background-color: black;
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   div.brand_mobile {
@@ -70,19 +70,18 @@ a:visited {
   .brand_mobile img.brand_name {
     position: relative;
     width: 70%;
-    margin-top: -8%;
+    margin-top: -9%;
   }
 
   .brand_mobile h2 {
     font-size: 0.5em;
-    margin-top: -11%;
     font-family: Times New Roman;
     font-weight: normal;
   }
 
   img.slashes {
     position: relative;
-    height: 100%;
+    height: 400%;
     margin-top: -65%;
     z-index: -1;
   }
