@@ -18,7 +18,9 @@ a:visited {
   color: black;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 570px){
+/*only screen and */
+
+@media (min-width: 300px) and (max-width: 570px){
 
   div#browser {
     display: none;
@@ -33,12 +35,11 @@ a:visited {
 
   img.trapezoid {
     z-index: -2;
-    height: 100%;
-    width: 95%;
+    height: 105%;
+    /*width: 95%;*/
     position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 4%;
+    margin-top: -8%;
+    margin-left: -75%;
   }
 
   div.top_line_1 {
@@ -57,9 +58,8 @@ a:visited {
 
   div.brand_mobile {
     width: 100%;
-    height: 20%;
+    height: 30%;
     position: relative;
-    overflow: hidden;
   }
 
   .brand_mobile img.logo {
@@ -75,35 +75,38 @@ a:visited {
   }
 
   .brand_mobile h2 {
-    font-size: 4vw;
+    position: relative;
+    font-size: 7vw;
     font-family: Times New Roman;
     font-weight: normal;
-    margin-top: -20%;
+    margin-top: -15%;
   }
 
   img.slashes {
-    position: relative;
-    width: 400%;
-    margin-top: -200%;
+    position: absolute;
+    height: 450%;
     z-index: -1;
+    left: 0;
+    top: -40%;
   }
 
   div.schedule_mobile {
     position: relative;
     width: 100%;
     height: 30%;
+    margin-top: 10%;
   }
 
   div.schedule_mobile p {
-    font-size: 1.5em;
-    margin-bottom: 5%;
+    font-size: 1.25em;
+    margin-bottom: 4%;
   }
 
   div.days {
     float: left;
     width: 44%;
     text-align: right;
-    font-size: 1.25em;
+    font-size: 1.2em;
     line-height: 1.7;
   }
 
@@ -111,14 +114,27 @@ a:visited {
     float: right;
     width: 50%;
     text-align: left;
-    font-size: 1.25em;
+    font-size: 1.2em;
     line-height: 1.7;
+  }
+
+  span.capital {
+    font-size: 1.25em;
+    line-height: 0.8;
+  }
+
+  span.small_cap {
+    font-size: 0.9em;
   }
 
   img.menu {
     margin-top: -20%;
     width: 70%;
     margin-bottom: -20%;
+  }
+
+  img.menu2:hover {
+    transform: scale(1.2);
   }
 
   p.phone {
@@ -128,16 +144,16 @@ a:visited {
 
   div.bottom_line_1 {
     width: 100%;
-    height: 5px;
+    height: 4px;
     background-color: black;
   }
 
   div.bottom_line_2 {
     width: 100%;
-    height: 8px;
+    height: 7px;
     background-color: black;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 4px;
+    margin-bottom: 4%;
   }
 
 }
