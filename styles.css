@@ -308,6 +308,7 @@ a:visited {
   div.contact {
     width: 100%;
     position: relative;
+    z-index: 100;
   }
 
   div.contact h2 {
@@ -318,6 +319,10 @@ a:visited {
   div.contact p {
     font-size: 1.2em;
     margin-bottom: 3%;
+  }
+
+  div.contact a p {
+    display: inline;
   }
 
   div.contact a:hover {
