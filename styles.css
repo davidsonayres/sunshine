@@ -155,7 +155,7 @@ a:visited {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 571px) {
 
   div#mobile {
     display: none;
@@ -247,11 +247,22 @@ a:visited {
     text-align-last: center;
   }
 
-  img.menu2 {
-    width: 40%;
-    margin-top: -22%;
-    z-index: 10;
+  div.menu_wrapper {
     position: relative;
+    /*text-align: center;*/
+    margin: -10% auto auto;
+    width: 170px;
+    height: 155px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+  img.menu2 {
+    height: 410px;
+    margin-top: -75%;
+    margin-left: -120%;
+    z-index: 10;
+    position: absolute;
   }
 
   img.menu2:hover {
@@ -262,7 +273,7 @@ a:visited {
     width: 100%;
     line-height: 1.5;
     position: relative;
-    margin-top: -10%;
+    margin-top: 2%;
   }
 
   div.schedule_browser h2 {
