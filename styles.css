@@ -14,6 +14,7 @@ a {
   text-decoration: none;
 }
 
+a:link,
 a:active,
 a:visited {
   color: black;
@@ -128,7 +129,8 @@ a:visited {
   }
 
   img.menu {
-    width: 30%;
+    width: 35%;
+    margin: -3% auto;
   }
 
   p.phone a {
@@ -248,7 +250,6 @@ a:visited {
 
   div.menu_wrapper {
     position: relative;
-    /*text-align: center;*/
     margin: -10% auto auto;
     width: 170px;
     height: 155px;
@@ -257,11 +258,9 @@ a:visited {
   }
 
   img.menu2 {
-    height: 410px;
-    margin-top: -75%;
-    margin-left: -120%;
+    height: 119%;
     z-index: 10;
-    position: absolute;
+    position: relative;
   }
 
   img.menu2:hover {
