@@ -8,6 +8,7 @@
 body {
   width: 100%;
   height: 100%;
+  background-color: #FFF200;
 }
 
 a {
@@ -19,8 +20,6 @@ a:active,
 a:visited {
   color: black;
 }
-
-/*only screen and */
 
 @media (min-width: 300px) and (max-width: 570px){
 
@@ -37,10 +36,10 @@ a:visited {
 
   img.trapezoid {
     z-index: -2;
-    height: 105%;
+    height: 150%;
     position: absolute;
-    margin-top: -8%;
-    margin-left: -68%;
+    margin-top: -30%;
+    margin-left: -50%;
   }
 
   div.top_line_1 {
@@ -170,10 +169,11 @@ a:visited {
 
   img.triangle {
     z-index: -2;
+    width: 120%;
+    position: absolute;
     right: 0;
-    top: 0;
-    width: 100%;
-    position: relative;
+    transform: rotate(7deg);
+    margin-top: -15%;
   }
 
   div.brand_browser {
